@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unlock Your Free Xbox Gift Card!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unlock a free Xbox gift card now! Follow the steps and claim your reward - limited time offer.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0e1a13;
+      color: #fff;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 400px;
+      background: rgba(34, 68, 34, 0.95);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.32);
+      padding: 2rem;
+      text-align: center;
+    }
+    .xbox-logo {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #9be282;
+      letter-spacing: 1px;
+    }
+    .giftcard-img {
+      width: 100%;
+      max-width: 250px;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .cta {
+      background: linear-gradient(90deg, #107c10, #9be282);
+      color: #0e1a13;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 1rem 0.5rem;
+      border: none;
+      border-radius: 8px;
+      margin: 1.2rem 0 0.7rem 0;
+      width: 100%;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cta:hover {
+      background: linear-gradient(90deg, #9be282, #107c10);
+    }
+    .steps {
+      text-align: left;
+      margin: 1rem 0;
+    }
+    .steps li {
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
+    }
+    #locker-frame {
+      display: none;
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1.4rem;
+      margin-bottom: 1.4rem;
+      background: #fff;
+    }
+    @media (max-width: 500px) {
+      .container {
+        max-width: 95vw;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+      #locker-frame {
+        height: 450px;
+      }
+    }
+  </style>
+  <script>
+    function showLocker() {
+      document.getElementById('locker-frame').style.display = 'block';
+      document.getElementById('locker-frame').scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <img class="xbox-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Xbox_logo_2012.svg" alt="Xbox Logo">
+    <h1>Unlock Your Free Xbox Gift Card!</h1>
+    <img class="giftcard-img" src="https://cdn.pixabay.com/photo/2017/01/18/19/11/xbox-1993873_1280.png" alt="Xbox Gift Card">
+    <ul class="steps">
+      <li><strong>Step 1:</strong> Click the button below.</li>
+      <li><strong>Step 2:</strong> Complete a short offer to unlock your code.</li>
+      <li><strong>Step 3:</strong> Your Xbox gift card code will be revealed instantly!</li>
+    </ul>
+    <button class="cta" onclick="showLocker()">
+      Unlock Gift Card
+    </button>
+    <iframe id="locker-frame" src="https://hubverify.com/cl/?o=683403ab3a158" allowfullscreen></iframe>
+    <small>Offer available for a limited time. One card per user. Good luck!</small>
+  </div>
+</body>
+</html>
